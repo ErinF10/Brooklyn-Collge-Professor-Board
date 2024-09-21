@@ -1,0 +1,81 @@
+body {
+  background-color: rgb(28, 28, 28);
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  color: white; /* Set default text color to white */
+}
+
+header {
+  padding: 30px;
+  background-image: url("./assets/images/header.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+header h1 {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.professor-container {
+  flex-wrap: wrap;
+  gap: 20px; /* Increased from 10px for better spacing */
+  padding: 20px; /* Add some padding around the container */
+}
+
+.cs, .math {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 20px; /* Increased from 5px for consistency */
+  padding: 20px; /* Add some padding */
+}
+
+.professor {
+  width: 280px;
+  border-radius: 10px;
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  overflow: hidden;
+  padding: 0 0 10px 0;
+  margin: 0 0 15px 0;
+  background-color: rgba(255, 255, 255, 0.08); /* Add a slight background */
+  transition: transform 0.5s ease; /* Add a hover effect */
+
+}
+
+.professor:hover {
+  transform: scale(1.02);
+}
+
+.professor h2 {
+  margin: 10px 0 0px 0;
+}
+
+.professor h1 {
+  margin: 5px 0 10px 0;
+}
+
+.professor img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover; 
+}
+
+button {
+  padding: 10px;
+  background-color: rgb(168, 168, 252);
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgb(138, 138, 255);
+}
